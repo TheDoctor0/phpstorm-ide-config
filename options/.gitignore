@@ -1,0 +1,7 @@
+*.xml
+!colors.xml
+!editor.xml
+!ide.general.xml
+!keymap.xml
+!material_custom_theme.xml
+!material_theme.xml

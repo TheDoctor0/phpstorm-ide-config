@@ -1,0 +1,18 @@
+<application>
+  <component name="MaterialThemeConfig">
+    <option name="compactDropdowns" value="true" />
+    <option name="highlightColorEnabled" value="true" />
+    <option name="isCompactMenus" value="true" />
+    <option name="isCompactStatusBar" value="true" />
+    <option name="isWizardShown" value="true" />
+    <option name="overrideAccentColor" value="true" />
+    <option name="pristineConfig" value="false" />
+    <option name="settingsSelectedTab" value="6" />
+    <option name="tabsHeight" value="34" />
+    <option name="accentColor" value="ffd866" />
+    <option name="highlightColor" value="e98f51" />
+    <option name="selectedTheme" value="MONOKAI" />
+    <option name="userId" value="4c8febb:1673d5aff2e:-8000" />
+    <option name="version" value="4.3.2" />
+  </component>
+</application>
