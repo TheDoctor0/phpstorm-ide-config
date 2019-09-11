@@ -1,0 +1,37 @@
+<templateSet group="Laravel-Blade-Package-Specific">
+  <template name="@spaceless" value="@spaceless&#10;$END$&#10;@endspaceless" description="Blade - @spaceless (slydeath/laravel5-blade-spaceless)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="@group" value="@group ('$GROUP$')&#10;    $END$&#10;@endgroup" description="Blade - @group (httpoz\roles)" toReformat="false" toShortenFQNames="true">
+    <variable name="GROUP" expression="" defaultValue="&quot;group&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="@role" value="@role ('$ROLE$')&#10;    $END$&#10;@endrole" description="Blade - @role (httpoz\roles)" toReformat="false" toShortenFQNames="true">
+    <variable name="ROLE" expression="" defaultValue="&quot;role&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="@SEO::generate" value="{!! SEO::generate(true) !!}&#10;&#10;$END$" description="Generate minified SEO metas (artesaos/seotools)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Bash" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>
