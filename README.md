@@ -57,3 +57,158 @@ Linux   | `~/.PhpStorm2019.2/config`
 macOS   | `~/Library/Preferences/PhpStorm2019.2`
 
 See [Default IDE directories](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#default-dirs) for more information about the location of the configuration directory.
+
+## Shortcuts
+
+### General
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + Tab              | Show switcher
+Ctrl + E                | Show last files
+Alt + R                 | Recent projects dialog
+Ctrl + Shift + E        | Show recent locations
+Ctrl + Space            | Show hinting dialog
+Alt + Enter             | Show intention actions
+Ctrl + Shift + Enter    | Complete current statement
+Ctrl + J                | Show available live templates
+Ctrl + Shift + V        | Select to paste from clipboards
+Alt + Click             | Multiple cursors
+Ctrl + Alt + S          | Open settings
+
+### Other
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + Ctrl             | Run anything
+Shift + F10             | Run current configuration
+Alt + Shift + F10       | Run configuration dialog
+Alt + S                 | New scratch file
+Ctrl + Alt + Shift + C  | Copy reference
+Shift + F4              | Close other tabs
+Alt + Left              | Move to previous tab
+Alt + Right             | Move to next tab
+Ctrl + ,                | Split vertically
+Ctrl + Shift + ,        | Remove split
+
+### Search
+Shortcut                | Action
+------------------------|----------------------------------
+Shift + Shift           | Search everywhere
+Ctrl + Shift + A        | Find action
+Ctrl + N                | Find class
+Ctrl + Shift + N        | Find file
+Ctrl + F                | Find in file
+Ctrl + Shift + F        | Find globally
+Ctrl + R                | Replace in file
+Ctrl + Shift + R        | Replace globally
+Ctrl + Shift + F7       | Highlight usages in this file
+
+### Navigation
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + Alt + Right      | Next edit location
+Ctrl + Alt + Left       | Previous edit location
+Ctrl + G                | Go to line : column
+Ctrl + Right            | Move caret to next word
+Ctrl + Left             | Move caret to previous word
+Ctrl + Shift + Up       | Move line or selection up
+Ctrl + Shift + Down     | Move line or selection down
+Alt + Down              | Next method
+Alt + Up                | Previous method
+F2                      | Next error
+Shift + F2              | Previous error
+Ctrl + Shift + M        | Move between matching braces
+Ctrl + [                | Move to block start
+Ctrl + ]                | Move to block end
+Shift + Enter           | Start new line
+
+### Selection
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + Alt + W          | Select line at caret
+Ctrl + W                | Extend selection
+Ctrl+ Shift + W         | Shrink selection
+Ctrl + Shift + O        | Select all occurrences
+Alt + J                 | Add selection for next occurrence
+Ctrl + Alt + Up         | Previous highlighted occurrence
+Ctrl + Alt + Down       | Next highlighted occurrence
+Alt + /                 | Cyclic expand word from next
+Shift + Alt + /         | Cyclic expand word from previous
+Ctrl + Shift + [        | Move to block start with selection
+Ctrl + Shift + ]        | Move to block end with selection
+Alt + H                 | Highlight current scope
+
+### Coding
+Shortcut                | Action
+------------------------|----------------------------------
+Alt + Insert            | Generate dialog
+Ctrl + O                | Override method
+Ctrl + I                | Implement method
+Alt + L                 | Reformat code
+Alt + Shift + L         | Reformat code dialog
+Ctrl + Alt + I          | Auto-indent line or selection
+Ctrl + D                | Duplicate line or selection
+Ctrl + Y                | Delete line at caret
+Ctrl + /                | Comment line or selection
+Ctrl + =                | Expand
+Ctrl + -                | Collapse
+Ctrl + Enter            | Split string to next line
+Ctrl + Shift + J        | Join lines
+
+### Documentation
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + B                | Show declaration / usage
+Ctrl + Alt + B          | Show implementation(s)
+Ctrl + Shift + B        | Show type declaration
+Ctrl + F12              | Show file structure
+Ctrl + H                | Show type hierarchy
+Ctrl + Alt + H          | Show method hierarchy
+Ctrl + Shift + H        | Show call hierarchy
+Ctrl + Shift + I        | Show quick definition
+Ctrl + Q                | Show quick documentation
+Ctrl + P                | Show parameter info
+Shift + F1              | Show documentation on php.net
+
+### Refactor
+Shortcut                | Action
+------------------------|----------------------------------
+Ctrl + Alt + R          | Show refactor dialog
+Ctrl + Alt + V          | Extract variable
+Ctrl + Alt + C          | Extract constant
+Ctrl + Alt + P          | Extract parameter
+Ctrl + Alt + F          | Extract field
+Ctrl + Alt + M          | Extract method
+Shift + F6              | Rename
+Ctrl + Alt + T          | Surround with dialog
+Ctrl + Shift + Delete   | Unwrap
+Ctrl + Shift + U        | Toggle case
+
+### Tools
+Shortcut                | Action
+------------------------|----------------------------------
+Alt + F1                | Show tools dialog
+Alt + 0                 | Terminal
+Alt + 1                 | Project
+Alt + 3                 | Hierarchy tool
+Alt + 4                 | Run
+Alt + 6                 | Database
+Alt + 8                 | Remote host
+Alt + 9                 | Version control
+Shift + Escape          | Hide active tool
+Ctrl + Shift + Q        | Start SSH session
+Alt + U                 | Upload to default server
+
+### Git
+Shortcut                | Action
+------------------------|----------------------------------
+Alt + `                 | Show operations dialog
+Alt + G                 | Show shelve dialog
+Ctrl + Shift + `        | Show branches dialog
+Ctrl + L                | Local history
+Ctrl + Shift + L        | Local history for selection
+Ctrl + T                | Update project
+Ctrl + K                | Commit
+Ctrl + Shift + K        | Push
+Ctrl + Alt + A          | Add
+Ctrl + Alt + Z          | Revert
+Alt + Shift + U         | Shelve changes
