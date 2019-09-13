@@ -73,15 +73,15 @@ Ctrl + Shift + Enter    | Complete current statement
 Ctrl + J                | Show available live templates
 Ctrl + Shift + V        | Select to paste from clipboards
 Alt + Click             | Multiple cursors
-Ctrl + Alt + S          | Open settings
 
-### Other
+### Miscellaneous
 Shortcut                | Action
 ------------------------|----------------------------------
 Ctrl + Ctrl             | Run anything
 Shift + F10             | Run current configuration
 Alt + Shift + F10       | Run configuration dialog
 Alt + S                 | New scratch file
+Ctrl + Alt + S          | Open settings
 Ctrl + Alt + Shift + C  | Copy reference
 Shift + F4              | Close other tabs
 Alt + Left              | Move to previous tab
@@ -89,7 +89,7 @@ Alt + Right             | Move to next tab
 Ctrl + ,                | Split vertically
 Ctrl + Shift + ,        | Remove split
 
-### Search
+### Search / Replace
 Shortcut                | Action
 ------------------------|----------------------------------
 Shift + Shift           | Search everywhere
@@ -140,7 +140,7 @@ Alt + H                 | Highlight current scope
 ### Coding
 Shortcut                | Action
 ------------------------|----------------------------------
-Alt + Insert            | Generate dialog
+Alt + Insert            | Generate code dialog
 Ctrl + O                | Override method
 Ctrl + I                | Implement method
 Alt + L                 | Reformat code
@@ -148,11 +148,11 @@ Alt + Shift + L         | Reformat code dialog
 Ctrl + Alt + I          | Auto-indent line or selection
 Ctrl + D                | Duplicate line or selection
 Ctrl + Y                | Delete line at caret
+Ctrl + Enter            | Split string to next line
+Ctrl + Shift + J        | Join lines
 Ctrl + /                | Comment line or selection
 Ctrl + =                | Expand
 Ctrl + -                | Collapse
-Ctrl + Enter            | Split string to next line
-Ctrl + Shift + J        | Join lines
 
 ### Documentation
 Shortcut                | Action
@@ -169,7 +169,7 @@ Ctrl + Q                | Show quick documentation
 Ctrl + P                | Show parameter info
 Shift + F1              | Show documentation on php.net
 
-### Refactor
+### Refactoring
 Shortcut                | Action
 ------------------------|----------------------------------
 Ctrl + Alt + R          | Show refactor dialog
@@ -178,6 +178,7 @@ Ctrl + Alt + C          | Extract constant
 Ctrl + Alt + P          | Extract parameter
 Ctrl + Alt + F          | Extract field
 Ctrl + Alt + M          | Extract method
+F6                      | Move
 Shift + F6              | Rename
 Ctrl + Alt + T          | Surround with dialog
 Ctrl + Shift + Delete   | Unwrap
@@ -189,7 +190,7 @@ Shortcut                | Action
 Alt + F1                | Show tools dialog
 Alt + 0                 | Terminal
 Alt + 1                 | Project
-Alt + 3                 | Hierarchy tool
+Alt + 3                 | Hierarchy
 Alt + 4                 | Run
 Alt + 6                 | Database
 Alt + 8                 | Remote host
@@ -198,12 +199,12 @@ Shift + Escape          | Hide active tool
 Ctrl + Shift + Q        | Start SSH session
 Alt + U                 | Upload to default server
 
-### Git
+### VCS
 Shortcut                | Action
 ------------------------|----------------------------------
 Alt + `                 | Show operations dialog
-Alt + G                 | Show shelve dialog
 Ctrl + Shift + `        | Show branches dialog
+Alt + G                 | Show shelve dialog
 Ctrl + L                | Local history
 Ctrl + Shift + L        | Local history for selection
 Ctrl + T                | Update project

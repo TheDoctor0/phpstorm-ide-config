@@ -1,184 +1,648 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
     <title>PHPStorm Cheat Sheet</title>
-</head>
-<body>
-    <h1>PHPStorm Shortcuts Cheat Sheet</h1>
+
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
         body {
-            font-family: Raleway;
-            font-size: 0.75rem;
+          font-family: Roboto;
+        }
+        @media print {
+          @page {size: A4 landscape; }
+
+          * {
+            font-size: x-small;
+          }
         }
         h1 {
-            width: 100%;
-            text-align: center;
-            font-size: 2rem;
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+        }
+        .container-fluid {
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        .row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          align-content: flex-start;
+        }
+        .col {
+          flex-grow: 1;
+          max-width: 100%;
+          padding: 5px;
         }
         table {
-            width: 100%;
-            border-collapse: collapse;
+          width: 100%;
+          border-collapse: collapse;
+        }
+        table th {
+          font-size: 1rem;
+          background: rgba(49, 79, 130, 0.7);
+          border-radius: 5px 5px 0 0;
+          padding: 0.4rem;
         }
         table tr:nth-child(even) {
-            background: rgba(115, 115, 180, 0.1);
+          background: rgba(66, 106, 173, 0.4);
         }
-        table td kbd {
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 0.1em 0.3em;
-            margin: 0 0.1em;
-            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-            background-color: #ffffff;
+        table tr:nth-child(odd) {
+          background: rgb(247, 247, 247);
+        }
+        table td b {
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 0.1rem 0.3rem;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+          background-color: #ffffff;
         }
         table td {
-            padding: 0.25rem;
-        }
-        table td:nth-child(2), table td:nth-child(4) {
-            border-right: 2px solid rgba(115, 115, 180, 0.3);
-            padding-right: 0.5rem;
-        }
-        table td:nth-child(3), table td:nth-child(5) {
-            padding-left: 0.5rem;
+          font-size: 0.8rem;
+          padding: 0.2rem;
         }
     </style>
-    <table>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>Shift</kbd></td><td><span>Search everywhere</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Tab</kbd></td><td><span>Show switcher</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td><span>Show last files</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td><td><span>Show last edited files</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd></td><td><span>Find action</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td><span>Find class</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td><td><span>Find file</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>F12</kbd></td><td><span>Show class methods</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td><span>Override method</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>I</kbd></td><td><span>Implement method</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>J</kbd></td><td><span>Available live templates</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Space</kbd></td><td><span>Show hinting dialog</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>G</kbd></td><td><span>Go to line / column</span></td>
-            <td><kbd>Alt</kbd>+<kbd>Enter</kbd></td><td><span>Show intention actions</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td><td><span>Select to paste from clipboards</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></td><td><span>Complete current statement</span></td>
-            <td><kbd>Alt</kbd>+<kbd>L</kbd></td><td><span>Reformat code</span></td>
-            <td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td><td><span>Reformat code dialog</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>F6</kbd></td><td><span>Rename</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd></td><td><span>Refactor dialog</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd></td><td><span>Start SSH session</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd></td><td><span>Run command</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>B</kbd></td><td><span>Show declaration / usage</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd></td><td><span>Show implementation(s)</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td><td><span>Show type declaration</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></td><td><span>Show quick definition</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Q</kbd></td><td><span>Show quick documentation</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Alt</kbd>+<kbd>G</kbd></td><td><span>Generate code</span></td>
-            <td><kbd>Alt</kbd>+<kbd>S</kbd></td><td><span>New scratch file</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>S</kbd></td><td><span>Open settings</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>T</kbd></td><td><span>VCS: Update project</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>`</kbd></td><td><span>VCS: Branches</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td><span>VCS: Commit</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></td><td><span>VCS: Push</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd></td><td><span>VCS: Add</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Z</kbd></td><td><span>VCS: Revert</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd></td><td><span>Surround with dialog</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd></td><td><span>Extract parameter</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>W</kbd></td><td><span>Extend selection</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></td><td><span>Shrink selection</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td><span>Duplicate line or selection</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd></td><td><span>Select line at caret</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td><td><span>Delete line at caret</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd></td><td><span>Reindent line or selection</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Up</kbd></td><td><span>Move line or selection up</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Down</kbd></td><td><span>Move line or selection down</span></td>
-            <td><kbd>Home</kbd></td><td><span>Move caret to line start</span></td>
-            <td><kbd>End</kbd></td><td><span>Move caret to line end</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Right</kbd></td><td><span>Move caret to next word</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Left</kbd></td><td><span>Move caret to previous word</span></td>
-            <td><kbd>Shift</kbd>+<kbd>Enter</kbd></td><td><span>Start new line</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Shift</kbd>+<kbd>F4</kbd></td><td><span>Close other tabs</span></td>
-            <td><kbd>Alt</kbd>+<kbd>Left</kbd></td><td><span>Move to previous tab</span></td>
-            <td><kbd>Alt</kbd>+<kbd>Right</kbd></td><td><span>Move to next tab</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Right</kbd></td><td><span>Next edit location</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Left</kbd></td><td><span>Previous edit location</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>,</kbd></td><td><span>Split Vertically</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>,</kbd></td><td><span>Unsplit</span></td>
-            <td><kbd>Shift</kbd>+<kbd>F10</kbd></td><td><span>Run current</span></td>
-            <td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F10</kbd></td><td><span>Select to run</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>F</kbd></td><td><span>Find in file</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></td><td><span>Find globally</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td><span>Replace in file</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></td><td><span>Replace globally</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>=</kbd></td><td><span>Expand</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>-</kbd></td><td><span>Collapse</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>/</kbd></td><td><span>Comment</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd></td><td><span>Select all occurrences</span></td>
-            <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td><td><span>Previous highlighted occurrence</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Ctrl</kbd>+<kbd>L</kbd></td><td><span>Next highlighted occurrence</span></td>
-            <td><kbd>Alt</kbd>+<kbd>/</kbd></td><td><span>Cyclic expand word from next</span></td>
-            <td><kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>/</kbd></td><td><span>Cyclic expand word from previous</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Alt</kbd>+<kbd>M</kbd></td><td><span>String manipulation dialog</span></td>
-            <td><kbd>Alt</kbd>+<kbd>R</kbd></td><td><span>Open recent dialog</span></td>
-            <td><kbd>Alt</kbd>+<kbd>U</kbd></td><td><span>Upload to default server</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Alt</kbd>+<kbd>0</kbd></td><td><span>Terminal</span></td>
-            <td><kbd>Alt</kbd>+<kbd>1</kbd></td><td><span>Project</span></td>
-            <td><kbd>Alt</kbd>+<kbd>4</kbd></td><td><span>Run</span></td>
-        </tr>
-        <tr>
-            <td><kbd>Alt</kbd>+<kbd>6</kbd></td><td><span>Database</span></td>
-            <td><kbd>Alt</kbd>+<kbd>8</kbd></td><td><span>Remote host</span></td>
-            <td><kbd>Alt</kbd>+<kbd>9</kbd></td><td><span>Version control</span></td>
-        </tr>
-    </table>
-</body>
+  </head>
+  <body>
+    <h1>PHPStorm Shortcuts Cheat Sheet</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">General</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>Tab</b></td>
+                <td>Show switcher</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>E</b></td>
+                <td>Show last files</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>R</b></td>
+                <td>Recent projects dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>E</b></td>
+                <td>Show recent locations</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Space</b></td>
+                <td>Show hinting dialog</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Enter</b></td>
+                <td>Show intention actions</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>Enter</b></td>
+                <td>Complete current statement</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>J</b></td>
+                <td>Show available live templates</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>V</b></td>
+                <td>Select to paste from clipboards</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Click</b></td>
+                <td>Multiple cursors</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Miscellaneous</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>Ctrl</b></td>
+                <td>Run anything</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>F10</b></td>
+                <td>Run current configuration</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Shift</b> + <b>F10</b></td>
+                <td>Run configuration dialog</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>S</b></td>
+                <td>New scratch file</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>S</b></td>
+                <td>Open settings</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Shift</b> + <b>C</b></td>
+                <td>Copy reference</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>F4</b></td>
+                <td>Close other tabs</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Left</b></td>
+                <td>Move to previous tab</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Right</b></td>
+                <td>Move to next tab</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>,</b></td>
+                <td>Split vertically</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>,</b></td>
+                <td>Remove split</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Search / Replace</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Shift</b> + <b>Shift</b></td>
+                <td>Search everywhere</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>A</b></td>
+                <td>Find action</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>N</b></td>
+                <td>Find class</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>N</b></td>
+                <td>Find file</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>F</b></td>
+                <td>Find in file</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>F</b></td>
+                <td>Find globally</td>
+              </tr>
+                <tr>
+                <td><b>Ctrl</b> + <b>R</b></td>
+                <td>Replace in file</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>R</b></td>
+                <td>Replace globally</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>F7</b></td>
+                <td>Highlight usages in this file</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Navigation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Right</b></td>
+                <td>Next edit location</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Left</b></td>
+                <td>Previous edit location</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>G</b></td>
+                <td>Go to line : column</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Right</b></td>
+                <td>Move caret to next word</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Left</b></td>
+                <td>Move caret to previous word</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>Up</b></td>
+                <td>Move line or selection up</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>Down</b></td>
+                <td>Move line or selection down</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Down</b></td>
+                <td>Next method</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Up</b></td>
+                <td>Previous method</td>
+              </tr>
+              <tr>
+                <td><b>F2</b></td>
+                <td>Next error</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>F2</b></td>
+                <td>Previous error</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>M</b></td>
+                <td>Move between matching braces</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>[</b></td>
+                <td>Move to block start</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>]</b></td>
+                <td>Move to block end</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>Enter</b></td>
+                <td>Start new line</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Selection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>W</b></td>
+                <td>Select line at caret</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>W</b></td>
+                <td>Extend selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>W</b></td>
+                <td>Shrink selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>O</b></td>
+                <td>Select all occurrences</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>J</b></td>
+                <td>Add selection for next occurrence</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Up</b></td>
+                <td>Previous highlighted occurrence</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Down</b></td>
+                <td>Next highlighted occurrence</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>/</b></td>
+                <td>Cyclic expand word from next</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>Alt</b> + <b>/</b></td>
+                <td>Cyclic expand word from previous</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>[</b></td>
+                <td>Move to block start with selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>]</b></td>
+                <td>Move to block end with selection</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>H</b></td>
+                <td>Highlight current scope</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Coding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Alt</b> + <b>Insert</b></td>
+                <td>Generate code dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>O</b></td>
+                <td>Override method</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>I</b></td>
+                <td>Implement method</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>L</b></td>
+                <td>Reformat code</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Shift</b> + <b>L</b></td>
+                <td>Reformat code dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>I</b></td>
+                <td>Auto-indent line or selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>D</b></td>
+                <td>Duplicate line or selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Y</b></td>
+                <td>Delete line at caret</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Enter</b></td>
+                <td>Split string to next line</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>J</b></td>
+                <td>Join lines</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>/</b></td>
+                <td>Comment line or selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>=</b></td>
+                <td>Expand</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>-</b></td>
+                <td>Collapse</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Documentation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>B</b></td>
+                <td>Show declaration / usage</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>B</b></td>
+                <td>Show implementation(s)</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>I</b></td>
+                <td>Show type declaration</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>F1</b></td>
+                <td>Show file structure</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>H</b></td>
+                <td>Show type hierarchy</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>H</b></td>
+                <td>Show method hierarchy</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>H</b></td>
+                <td>Show call hierarchy</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>I</b></td>
+                <td>Show quick definition</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Q</b></td>
+                <td>Show quick documentation</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>P</b></td>
+                <td>Show parameter info</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>F1</b></td>
+                <td>Show documentation on php.net</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Refactoring</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>R</b></td>
+                <td>Show refactor dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>V</b></td>
+                <td>Extract variable</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>C</b></td>
+                <td>Extract constant</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>P</b></td>
+                <td>Extract parameter</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>F</b></td>
+                <td>Extract field</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>M</b></td>
+                <td>Extract method</td>
+              </tr>
+              <tr>
+                <td><b>F6</b></td>
+                <td>Move</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>F6</b></td>
+                <td>Rename</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>T</b></td>
+                <td>Surround with dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>Delete</b></td>
+                <td>Unwrap</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>U</b></td>
+                <td>Toggle case</td>
+              </tr>
+            </tbody>
+          </table>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Tools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Alt</b> + <b>F1</b></td>
+                <td>Show tools dialog</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>0</b></td>
+                <td>Terminal</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>1</b></td>
+                <td>Project</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>3</b></td>
+                <td>Hierarchy</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>4</b></td>
+                <td>Run</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>6</b></td>
+                <td>Database</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>8</b></td>
+                <td>Remote host</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>9</b></td>
+                <td>Version control</td>
+              </tr>
+              <tr>
+                <td><b>Shift</b> + <b>Escape</b></td>
+                <td>Hide active tool</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>Q</b></td>
+                <td>Start SSH session</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>U</b></td>
+                <td>Upload to default server</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">VCS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Alt</b> + <b>`</b></td>
+                <td>Show operations dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>`</b></td>
+                <td>Show branches dialog</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>G</b></td>
+                <td>Show shelve dialog</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>L</b></td>
+                <td>Local history</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>L</b></td>
+                <td>Local history for selection</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>T</b></td>
+                <td>Update project</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>K</b></td>
+                <td>Commit</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Shift</b> + <b>K</b></td>
+                <td>Push</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>A</b></td>
+                <td>Add</td>
+              </tr>
+              <tr>
+                <td><b>Ctrl</b> + <b>Alt</b> + <b>Z</b></td>
+                <td>Revert</td>
+              </tr>
+              <tr>
+                <td><b>Alt</b> + <b>Shift</b> + <b>U</b></td>
+                <td>Shelve changes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
