@@ -4,7 +4,7 @@ This is my global configuration for [PhpStorm](https://www.jetbrains.com/phpstor
 It contains custom configs for code styling, keymaps, inspections as well as some file templates.
 I use Git to track these files and to synchronize them between workstations - Windows and macOS.
 
-There is also cheat sheet my personalized for PhpStorm shortcuts, available [online](https://thedoctor0.github.io/phpstorm-ide-config/) or as [PDF](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/phpstorm-cheat-sheet.pdf).
+There is also cheat sheet for my personalized PhpStorm keymap, available [online](https://thedoctor0.github.io/phpstorm-ide-config/) or as [PDF](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/phpstorm-cheat-sheet.pdf).
 
 Feel free to use or fork this repository.
 
