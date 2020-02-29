@@ -1,6 +1,7 @@
 <code_scheme name="Default" version="173">
   <option name="OTHER_INDENT_OPTIONS">
     <value>
+      <option name="USE_TAB_CHARACTER" value="true" />
       <option name="SMART_TABS" value="true" />
     </value>
   </option>
@@ -16,6 +17,7 @@
     <option name="HEX_COLOR_SHORT_FORMAT" value="true" />
   </CssCodeStyleSettings>
   <HTMLCodeStyleSettings>
+    <option name="HTML_TEXT_WRAP" value="0" />
     <option name="HTML_KEEP_LINE_BREAKS_IN_TEXT" value="false" />
     <option name="HTML_KEEP_BLANK_LINES" value="1" />
     <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
@@ -73,7 +75,10 @@
   </codeStyleSettings>
   <codeStyleSettings language="HTML">
     <indentOptions>
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="INDENT_SIZE" value="2" />
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
+      <option name="TAB_SIZE" value="2" />
+      <option name="SMART_TABS" value="true" />
     </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="JSON">
