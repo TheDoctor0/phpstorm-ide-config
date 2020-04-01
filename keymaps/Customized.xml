@@ -8,13 +8,22 @@
   <action id="ActivateHierarchyToolWindow">
     <keyboard-shortcut first-keystroke="alt 3" />
   </action>
-  <action id="ActivateRemoteHostToolWindow">
-    <keyboard-shortcut first-keystroke="alt 8" />
+  <action id="ActivateQuickNotesToolWindow">
+    <keyboard-shortcut first-keystroke="alt 5" />
   </action>
-  <action id="ActivateTODOToolWindow" />
+  <action id="ActivateRemoteHostToolWindow">
+    <keyboard-shortcut first-keystroke="alt 3" />
+  </action>
+  <action id="ActivateServicesToolWindow" />
+  <action id="ActivateTODOToolWindow">
+    <keyboard-shortcut first-keystroke="alt 4" />
+  </action>
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="alt f12" />
     <keyboard-shortcut first-keystroke="alt 0" />
+  </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="alt 8" />
   </action>
   <action id="ChangesView.Shelve">
     <keyboard-shortcut first-keystroke="shift alt u" />
@@ -23,6 +32,7 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt f4" />
     <keyboard-shortcut first-keystroke="shift f4" />
   </action>
+  <action id="Cpt.OpenSettings" />
   <action id="Debugger.EditTypeSource" />
   <action id="EditSourceInNewWindow">
     <keyboard-shortcut first-keystroke="shift alt o" />
@@ -30,9 +40,23 @@
   <action id="Editor LRU">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="EditorBackwardParagraph">
+    <keyboard-shortcut first-keystroke="alt open_bracket" />
+  </action>
+  <action id="EditorBackwardParagraphWithSelection">
+    <keyboard-shortcut first-keystroke="shift alt open_bracket" />
+  </action>
+  <action id="EditorForwardParagraph">
+    <keyboard-shortcut first-keystroke="alt close_bracket" />
+  </action>
+  <action id="EditorForwardParagraphWithSelection">
+    <keyboard-shortcut first-keystroke="shift alt close_bracket" />
+  </action>
   <action id="EditorSelectLine">
     <keyboard-shortcut first-keystroke="ctrl alt w" />
   </action>
+  <action id="EmmetNextEditPoint" />
+  <action id="EmmetPreviousEditPoint" />
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
