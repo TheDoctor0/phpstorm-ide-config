@@ -1,6 +1,7 @@
 <templateSet group="PHPUnit">
-  <template name="@test" value="public function test$NAME$(): void&#10;{&#10;&#9;$END$&#10;}" description="PHPUnit test" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="@test" value="/** @test */&#10;$RAW_NAME$&#10;public function $NAME$(): void&#10;{&#10;&#9;$END$&#10;}" description="PHPUnit test" toReformat="true" toShortenFQNames="true">
+    <variable name="RAW_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="snakeCase(RAW_NAME)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Class Member" value="true" />
     </context>
