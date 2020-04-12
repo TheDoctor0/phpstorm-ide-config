@@ -38,6 +38,8 @@ Use the following commands to go to the config directory, remove default directo
 ```bash
 # Replace with the actual directory name, depending on OS and PhpStorm version (see below for help).
 cd ~/.PhpStorm2019.3/config
+# It will be path with jba_config if you are using settings synchronization with JetBrains account.
+cd ~/.PhpStorm2019.3/config/jba_config
 
 rm -r codestyles colors fileTemplates inspection keymaps templates options
 rm editor.codeinsight.xml options/colors.scheme.xml options/editor.xml options/ide.general.xml options/keymap.xml options/material_custom_theme.xml options/material_theme.xml
@@ -101,6 +103,7 @@ Ctrl + Shift + F        | Find globally
 Ctrl + R                | Replace in file
 Ctrl + Shift + R        | Replace globally
 Ctrl + Shift + F7       | Highlight usages in this file
+Ctrl + Alt + Shift + I	| Run inspection by name
 
 ### Navigation
 Shortcut                | Action
@@ -135,7 +138,10 @@ Alt + /                 | Cyclic expand word from next
 Shift + Alt + /         | Cyclic expand word from previous
 Ctrl + Shift + [        | Move to block start with selection
 Ctrl + Shift + ]        | Move to block end with selection
+Alt + Shift + [	        | Move caret backwards a paragraph with selection
+Ctrl + Shift + ]	      | Move caret forwards a paragraph with selection
 Alt + H                 | Highlight current scope
+Alt + F1	              | Select In dialog
 
 ### Coding
 Shortcut                | Action
