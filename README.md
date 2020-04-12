@@ -122,7 +122,8 @@ Shift + F2              | Previous error
 Ctrl + Shift + M        | Move between matching braces
 Ctrl + [                | Move to block start
 Ctrl + ]                | Move to block end
-Shift + Enter           | Start new line
+Ctrl + Alt + Page Up    | Clone caret above
+Ctrl + Alt + Page Down  | Clone caret below
 
 ### Selection
 Shortcut                | Action
@@ -139,9 +140,9 @@ Shift + Alt + /         | Cyclic expand word from previous
 Ctrl + Shift + [        | Move to block start with selection
 Ctrl + Shift + ]        | Move to block end with selection
 Alt + Shift + [	        | Move caret backwards a paragraph with selection
-Ctrl + Shift + ]	      | Move caret forwards a paragraph with selection
+Ctrl + Shift + ]	    | Move caret forwards a paragraph with selection
 Alt + H                 | Highlight current scope
-Alt + F1	              | Select In dialog
+Alt + F1	            | Select In dialog
 
 ### Coding
 Shortcut                | Action
@@ -156,6 +157,7 @@ Ctrl + D                | Duplicate line or selection
 Ctrl + Y                | Delete line at caret
 Ctrl + Enter            | Split string to next line
 Ctrl + Shift + J        | Join lines
+Shift + Enter           | Start new line
 Ctrl + /                | Comment line or selection
 Ctrl + =                | Expand
 Ctrl + -                | Collapse
