@@ -75,6 +75,7 @@ Ctrl + Shift + Enter    | Complete current statement
 Ctrl + J                | Show available live templates
 Ctrl + Shift + V        | Select to paste from clipboards
 Alt + Click             | Multiple cursors
+Ctrl + Alt + S          | Open settings
 
 ### Miscellaneous
 Shortcut                | Action
@@ -83,7 +84,7 @@ Ctrl + Ctrl             | Run anything
 Shift + F10             | Run current configuration
 Alt + Shift + F10       | Run configuration dialog
 Alt + S                 | New scratch file
-Ctrl + Alt + S          | Open settings
+Alt + Home + Alt + Insert | New file in specified location
 Ctrl + Alt + Shift + C  | Copy reference
 Shift + F4              | Close other tabs
 Alt + Left              | Move to previous tab
@@ -124,6 +125,8 @@ Ctrl + [                | Move to block start
 Ctrl + ]                | Move to block end
 Ctrl + Alt + Page Up    | Clone caret above
 Ctrl + Alt + Page Down  | Clone caret below
+Ctrl + Home             | Go to the start of file
+Ctrl + End              | Go to the end of file
 
 ### Selection
 Shortcut                | Action
@@ -133,8 +136,12 @@ Ctrl + W                | Extend selection
 Ctrl+ Shift + W         | Shrink selection
 Ctrl + Shift + O        | Select all occurrences
 Alt + J                 | Add selection for next occurrence
+Ctrl + Shift + Left     | Add previous word to selection
+Ctrl + Shift + Right    | Add next word to selection
 Ctrl + Alt + Up         | Previous highlighted occurrence
 Ctrl + Alt + Down       | Next highlighted occurrence
+Shift + Home            | Select all to the start of line
+Shift + End             | Select all to the end of line
 Alt + /                 | Cyclic expand word from next
 Shift + Alt + /         | Cyclic expand word from previous
 Ctrl + Shift + [        | Move to block start with selection
@@ -154,7 +161,10 @@ Alt + L                 | Reformat code
 Alt + Shift + L         | Reformat code dialog
 Ctrl + Alt + I          | Auto-indent line or selection
 Ctrl + D                | Duplicate line or selection
+Ctrl + Shift + D        | Duplicate whole line
 Ctrl + Y                | Delete line at caret
+Ctrl + Shift + Y        | Delete to the line end
+Ctrl + Backspace        | Delete previous word
 Ctrl + Enter            | Split string to next line
 Ctrl + Shift + J        | Join lines
 Shift + Enter           | Start new line
