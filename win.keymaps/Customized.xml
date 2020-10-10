@@ -2,12 +2,16 @@
   <action id="$LRU">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="ActivateCommitToolWindow">
+    <keyboard-shortcut first-keystroke="alt 9" />
+  </action>
   <action id="ActivateDatabaseToolWindow">
     <keyboard-shortcut first-keystroke="alt 6" />
   </action>
   <action id="ActivateHierarchyToolWindow">
     <keyboard-shortcut first-keystroke="alt 3" />
   </action>
+  <action id="ActivateProblemsViewToolWindow" />
   <action id="ActivateQuickNotesToolWindow">
     <keyboard-shortcut first-keystroke="alt 5" />
   </action>

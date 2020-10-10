@@ -1,6 +1,7 @@
 <application>
   <component name="UISettings">
     <option name="HIDE_TOOL_STRIPES" value="true" />
+    <option name="PIN_FIND_IN_PATH_POPUP" value="true" />
     <option name="SHOW_NAVIGATION_BAR" value="false" />
   </component>
 </application>

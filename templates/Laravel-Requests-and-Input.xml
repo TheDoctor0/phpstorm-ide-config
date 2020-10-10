@@ -1,6 +1,5 @@
 <templateSet group="Laravel-Requests-and-Input">
   <template name="Cookie::get" value="Cookie::get('$NAME$');$END$" description="Retrieve a Cookie value" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
-    <context />
   </template>
 </templateSet>
