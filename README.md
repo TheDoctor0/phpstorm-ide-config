@@ -214,6 +214,7 @@ Alt + 6                 | Database
 Alt + 8                 | Remote host
 Alt + 9                 | Version control
 Shift + Escape          | Hide active tool
+Ctrl + Shift + '        | Expand / Shrink tool window
 Ctrl + Shift + Q        | Start SSH session
 Alt + U                 | Upload to default server
 
