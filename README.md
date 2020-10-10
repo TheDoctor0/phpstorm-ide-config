@@ -37,9 +37,9 @@ Use the following commands to go to the config directory, remove default directo
 
 ```bash
 # Replace with the actual directory name, depending on OS and PhpStorm version (see below for help).
-cd ~/.PhpStorm2020.2.2/config
+cd ~/JetBrains/.PhpStorm2020.2/config
 # It will be path with jba_config if you are using settings synchronization with JetBrains account.
-cd ~/.PhpStorm2020.2.2/config/jba_config
+cd ~/JetBrains/.PhpStorm2020.2/config/jba_config
 
 rm -r codestyles colors fileTemplates inspection keymaps templates options
 rm editor.codeinsight.xml options/colors.scheme.xml options/editor.xml options/ide.general.xml options/keymap.xml options/material_custom_theme.xml options/material_theme.xml
@@ -54,9 +54,9 @@ git checkout -t origin/master
 
 OS      | Location
 --------|---------
-Windows | `%APPDATA%\JetBrains\.PhpStorm2020.2.2`
-Linux   | `~/JetBrains/.PhpStorm2020.2.2`
-macOS   | `~/Library/Application Support/JetBrains/PhpStorm2020.2.2`
+Windows | `%APPDATA%\JetBrains\.PhpStorm2020.2`
+Linux   | `~/JetBrains/.PhpStorm2020.2`
+macOS   | `~/Library/Application Support/JetBrains/PhpStorm2020.2`
 
 See [Default IDE directories](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#default-dirs) for more information about the location of the configuration directory.
 
