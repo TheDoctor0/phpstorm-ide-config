@@ -1,5 +1,5 @@
 <templateSet group="Laravel-Schema">
-  <template name="nullable" value="-&gt;nullable();$END$" description="Designate that the column allows NULL values" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name="nullable" value="-&gt;nullable();$END$" description="Designate that the column allows NULL values" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JSP" value="false" />
     </context>

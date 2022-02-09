@@ -1,4 +1,4 @@
-# PhpStorm IDE configuration [![PhpStorm version](https://img.shields.io/badge/PhpStorm-2020.2.2-brightgreen.svg)](https://www.jetbrains.com/phpstorm/) [![License](https://img.shields.io/github/license/TheDoctor0/phpstorm-ide-config)](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/LICENSE.md)
+# PhpStorm IDE configuration [![PhpStorm version](https://img.shields.io/badge/PhpStorm-2021.3.2-brightgreen.svg)](https://www.jetbrains.com/phpstorm/) [![License](https://img.shields.io/github/license/TheDoctor0/phpstorm-ide-config)](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/LICENSE.md)
 
 This is my global configuration for [PhpStorm](https://www.jetbrains.com/phpstorm/).
 It contains custom configs for code styling, keymaps, inspections as well as some file templates.
@@ -37,9 +37,9 @@ Use the following commands to go to the config directory, remove default directo
 
 ```bash
 # Replace with the actual directory name, depending on OS and PhpStorm version (see below for help).
-cd ~/JetBrains/.PhpStorm2020.2/config
+cd ~/JetBrains/.PhpStorm2021.3/config
 # It will be path with jba_config if you are using settings synchronization with JetBrains account.
-cd ~/JetBrains/.PhpStorm2020.2/config/jba_config
+cd ~/JetBrains/.PhpStorm2021.3/config/jba_config
 
 rm -r codestyles colors fileTemplates inspection keymaps templates options
 rm editor.codeinsight.xml options/colors.scheme.xml options/editor.xml options/ide.general.xml options/keymap.xml options/material_custom_theme.xml options/material_theme.xml
@@ -54,9 +54,9 @@ git checkout -t origin/master
 
 OS      | Location
 --------|---------
-Windows | `%APPDATA%\JetBrains\.PhpStorm2020.2`
-Linux   | `~/JetBrains/.PhpStorm2020.2`
-macOS   | `~/Library/Application Support/JetBrains/PhpStorm2020.2`
+Windows | `%APPDATA%\JetBrains\.PhpStorm2021.3`
+Linux   | `~/JetBrains/.PhpStorm2021.3`
+macOS   | `~/Library/Application Support/JetBrains/PhpStorm2021.3`
 
 See [Default IDE directories](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#default-dirs) for more information about the location of the configuration directory.
 

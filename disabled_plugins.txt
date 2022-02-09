@@ -1,0 +1,7 @@
+BashSupport
+PHPUnit code coverage
+com.github.gtache.lsp
+com.kevinlinxp.sublimeSnippetsSupport
+io.github.qeesung.component.HighlightBracketPair
+org.psliwa.idea.composer
+org.rust.lang
