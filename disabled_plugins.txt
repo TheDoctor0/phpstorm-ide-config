@@ -1,7 +1,13 @@
 BashSupport
+NEON support
 PHPUnit code coverage
+com.alayouni.ansiHighlight
 com.github.gtache.lsp
 com.kevinlinxp.sublimeSnippetsSupport
+com.mesour.intellij.neon
+com.myoutdesk.tailwind_formatter
+com.shen.plugin.element
+cz.juzna.intellij.neon
 io.github.qeesung.component.HighlightBracketPair
 org.psliwa.idea.composer
 org.rust.lang

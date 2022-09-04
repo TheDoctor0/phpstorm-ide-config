@@ -1,4 +1,4 @@
-# PhpStorm IDE configuration [![PhpStorm version](https://img.shields.io/badge/PhpStorm-2021.3.2-brightgreen.svg)](https://www.jetbrains.com/phpstorm/) [![License](https://img.shields.io/github/license/TheDoctor0/phpstorm-ide-config)](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/LICENSE.md)
+# PhpStorm IDE configuration [![PhpStorm version](https://img.shields.io/badge/PhpStorm-2022.2-brightgreen.svg)](https://www.jetbrains.com/phpstorm/) [![License](https://img.shields.io/github/license/TheDoctor0/phpstorm-ide-config)](https://github.com/TheDoctor0/phpstorm-ide-config/blob/master/LICENSE.md)
 
 This is my global configuration for [PhpStorm](https://www.jetbrains.com/phpstorm/).
 It contains custom configs for code styling, keymaps, inspections as well as some file templates.
@@ -37,9 +37,9 @@ Use the following commands to go to the config directory, remove default directo
 
 ```bash
 # Replace with the actual directory name, depending on OS and PhpStorm version (see below for help).
-cd ~/JetBrains/.PhpStorm2021.3/config
+cd ~/JetBrains/.PhpStorm2022.2/config
 # It will be path with jba_config if you are using settings synchronization with JetBrains account.
-cd ~/JetBrains/.PhpStorm2021.3/config/jba_config
+cd ~/JetBrains/.PhpStorm2022.2/config/jba_config
 
 rm -r codestyles colors fileTemplates inspection keymaps templates options
 rm editor.codeinsight.xml options/colors.scheme.xml options/editor.xml options/ide.general.xml options/keymap.xml options/material_custom_theme.xml options/material_theme.xml
@@ -54,9 +54,9 @@ git checkout -t origin/master
 
 OS      | Location
 --------|---------
-Windows | `%APPDATA%\JetBrains\.PhpStorm2021.3`
-Linux   | `~/JetBrains/.PhpStorm2021.3`
-macOS   | `~/Library/Application Support/JetBrains/PhpStorm2021.3`
+Windows | `%APPDATA%\JetBrains\.PhpStorm2022.2`
+Linux   | `~/JetBrains/.PhpStorm2022.2`
+macOS   | `~/Library/Application Support/JetBrains/PhpStorm2022.2`
 
 See [Default IDE directories](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#default-dirs) for more information about the location of the configuration directory.
 
@@ -208,22 +208,23 @@ Shortcut                | Action
 Alt + F1                | Show tools dialog
 Alt + 0                 | Terminal
 Alt + 1                 | Project
-Alt + 3                 | Hierarchy
+Alt + 2                 | Database
+Alt + 3                 | File structure
 Alt + 4                 | Run
-Alt + 6                 | Database
-Alt + 8                 | Remote host
+Alt + 5                 | Debug
+Alt + 6                 | Problems
+Alt + 7                 | Remote host
+Alt + 8                 | Pull requests
 Alt + 9                 | Version control
+Alt + W                 | Hide all active tools
 Shift + Escape          | Hide active tool
-Ctrl + Shift + '        | Expand / Shrink tool window
 Ctrl + Shift + Q        | Start SSH session
-Alt + U                 | Upload to default server
 
 ### VCS
 Shortcut                | Action
 ------------------------|----------------------------------
 Alt + `                 | Show operations dialog
 Ctrl + Shift + `        | Show branches dialog
-Alt + G                 | Show shelve dialog
 Ctrl + L                | Local history
 Ctrl + Shift + L        | Local history for selection
 Ctrl + T                | Update project
@@ -231,4 +232,5 @@ Ctrl + K                | Commit
 Ctrl + Shift + K        | Push
 Ctrl + Alt + A          | Add
 Ctrl + Alt + Z          | Revert
-Alt + Shift + U         | Shelve changes
+Alt + Shift + S         | Stash changes
+Alt + Shift + U         | Unstash changes
